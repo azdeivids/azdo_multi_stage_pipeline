@@ -34,6 +34,6 @@ resource azuredevops_build_definition multi_stage {
 
   variable {
     name  = "WorkingDirectory"
-    vlaue = "terraform"
+    value = "terraform"
   }
 }
