@@ -5,7 +5,7 @@ azure_credentials = {
         tenant_id       = ""
         subscription_id = ""
     }
-    "dev" = {
+    "prod" = {
         client_id       = ""
         client_secret   = ""
         tenant_id       = ""
@@ -14,15 +14,13 @@ azure_credentials = {
 }
 azure_backend = {
     "dev" = {
-        client_id       = ""
-        client_secret   = ""
-        tenant_id       = ""
-        subscription_id = ""
+        resource_group  = ""
+        storage_account = ""
+        container       = ""
     }
-    "dev" = {
-        client_id       = ""
-        client_secret   = ""
-        tenant_id       = ""
-        subscription_id = ""
+    "prod" = {
+        resource_group  = ""
+        storage_account = ""
+        container       = ""
     }
 }
