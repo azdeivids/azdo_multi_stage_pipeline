@@ -1,5 +1,5 @@
 resource azuredevops_environment main {
-  count      = length(var.env)
+  count      = length(var.env_name)
   project_id = azuredevops_project.main.id
-  name       = var.env[count.index]
+  name       = var.env_name[count.index]
 }
