@@ -1,10 +1,10 @@
 resource azuredevops_build_definition apply {
 
-  count = length(var.env)
+  count = length(var.env_name)
 
   project_id = azuredevops_project.main.id
   name       = "apply"
-  path       = "\\${var.app_name}\\${var.env[count.index]}"
+  path       = "\\${var.app_name}\\${var.env_name[count.index]}"
 
   ci_trigger {
     use_yaml = false
@@ -29,7 +29,7 @@ resource azuredevops_build_definition apply {
 
   variable {
     name  = "EnvironmentName"
-    value = var.env[count.index]
+    value = var.env_name[count.index]
   }
 
   variable {
