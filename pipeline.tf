@@ -1,4 +1,4 @@
-resource azuredevops_build_definition apply {
+resource azuredevops_build_definition multi_stage {
 
   count = length(var.env_name)
 
