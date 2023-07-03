@@ -1,10 +1,10 @@
 variable app_name {
     type = string
 }
-variable env {
+variable env_name {
   type = list(string)
 }
-variable repo_template {
+variable repo_template_url {
   type = string
 }
 variable azure_credentials {
