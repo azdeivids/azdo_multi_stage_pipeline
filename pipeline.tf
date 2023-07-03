@@ -3,7 +3,7 @@ resource azuredevops_build_definition multi_stage {
   count = length(var.env_name)
 
   project_id = azuredevops_project.main.id
-  name       = "apply"
+  name       = "multi-stage"
   path       = "\\${var.app_name}\\${var.env_name[count.index]}"
 
   ci_trigger {
