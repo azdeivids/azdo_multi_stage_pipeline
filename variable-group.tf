@@ -3,7 +3,7 @@ resource azuredevops_variable_group azure_credentials {
   count = length(var.env_name)
 
   project_id   = azuredevops_project.main.id
-  name         = "azure-tf-credentials-${var.env_name[count.index]}."
+  name         = "azure-tf-credentials-${var.env_name[count.index]}"
   description  = "Azure credentials for ${var.env_name[count.index]} environment to authenticate terraform"
   allow_access = true
 
