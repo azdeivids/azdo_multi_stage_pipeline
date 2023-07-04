@@ -1,3 +1,4 @@
-app_name          = "demo-app-name"
-repo_template_url = "https://github.com/azdeivids/azdo-terraform-template-multi-stage.git"
-env_name          = ["dev", "prod"]
+app_name            = "foo"
+env_name            = ["dev", "prod"]
+project_description = "Project description"
+repo_template_url   = "https://github.com/azdeivids/azdo-terraform-template-multi-stage.git"

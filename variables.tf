@@ -4,6 +4,9 @@ variable app_name {
 variable env_name {
   type = list(string)
 }
+variable project_description {
+  type = string
+}
 variable repo_template_url {
   type = string
 }

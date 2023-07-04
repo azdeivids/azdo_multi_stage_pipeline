@@ -1,6 +1,6 @@
 resource azuredevops_project main {
-  name        = "automation"
-  description = "This project is to be used to automate the automation. Most of the resources will be published using Terraform."
+  name        = var.app_name
+  description = var.project_description
 }
 
 resource azuredevops_git_repository infra {
@@ -9,6 +9,6 @@ resource azuredevops_git_repository infra {
   initialization {
     init_type   = "Import"
     source_type = "Git"
-    source_url  = "https://github.com/azdeivids/azdo-terraform-template-multi-stage.git"
+    source_url  = var.repo_template_url
   }
 }
