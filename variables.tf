@@ -10,6 +10,12 @@ variable project_description {
 variable repo_template_url {
   type = string
 }
+variable reviewers {
+  type = list(string)
+}
+variable minimum_number_of_reviewers {
+  type = number
+}
 variable azure_credentials {
   type = map(
     object(
